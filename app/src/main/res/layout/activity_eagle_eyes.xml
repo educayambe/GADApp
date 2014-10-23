@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/aplicativo_texturaa"
+    android:screenOrientation="landscape"
+
+    tools:context="danna.net.gadapp.EagleEyes"
+    android:baselineAligned="false">
+
+    <fragment
+        android:id="@+id/fragmentlist"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        class="danna.net.gadapp.ListFragment" >
+    </fragment>
+
+    <FrameLayout
+        android:layout_width="980dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="0dp"
+        android:id="@+id/frdetails">
+        </FrameLayout>
+
+
+</LinearLayout>

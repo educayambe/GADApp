@@ -1,0 +1,44 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="200dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/aplicativo_textura"
+    tools:context="danna.net.gadapp.ListFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnfacebook"
+        android:layout_gravity="left|top"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:onClick="onClick"
+        android:src="@drawable/gadip_facebook"
+         />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bnttwitter"
+        android:layout_gravity="left|top"
+        android:src="@drawable/gadip_twitter"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="10dp"
+        android:focusableInTouchMode="false"
+        android:onClick="onClick"
+         />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btncamera"
+        android:layout_gravity="left|top"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="220dp"
+        android:src="@drawable/tu_voz"
+        android:onClick="onClick"
+         />
+
+</FrameLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Sites>
+  <Site>
+        <Name>Comunidad de Cariacu</Name>
+        <Desc></Desc>
+	<Location>A 30 minutos de la ciudad de Cayambe se encuentra la comunidad de Cariacu</Location>
+	<How>Para llegar a la comunidad toma un bus de la cooperativa 24 de Junio, existe una distancia de 8 Km, por un camino de segundo orden, el costo del pasaje es de 0,40 centavos adultos y 0,25 centavos niños con uniforme</How>
+	<Services>Cabalgata|Tracking|Visita  a las cascadas|Visita a la piedra magnética|Camping|Deportes de aventura|Alojamiento|Alimentación</Services>
+        <Contacts>Sr. Germánico Guacán- Presidente Turismo comunitario|Celular: 0967008835|Convencional: 002129255</Contacts>
+	<Image>cariacu</Image>
+	<Sector>1</Sector>
+   </Site>
+	<Site>
+        <Name>Comunidad de Paquiestancia</Name>
+        <Desc>En este mágico lugar podemos disfrutar de tres senderos los cuales nos conducirán con la flora y la fauna del entorno.</Desc>
+	<Location>La Comunidad de Paquiestancia se encuentra ubicada a 20 minutos de la cabecera cantonal Cayambe</Location>
+	<How>Para llegar a la comunidad toma un bus de la cooperativa 23 de Junio, existe una distancia de 5 Km, por un camino de segundo orden</How>
+	<Services>Visita al centro de interpretación.|Cabalgata.|Visita a viveros.|Acceso a bosques primarios y  al páramo.|Alimentación.|Camping.|Alojamiento.</Services>
+        <Contacts>Sr. Rogelio Gualavisi – Presidente del CTC Paquiestancia.|Celular: 0994169541.|Convencional: 022129022</Contacts>
+	<Image>paquiestancia</Image>
+	<Sector>1</Sector>
+   </Site>
+
+   <Site >
+        <Name>La Bola de Guachalá, Mitad del Mundo</Name>
+        <Desc>El monumento a la Mitad del Mundo, tradicionalmente conocido como La Bola del Mundo, consiste en el globo hecho en piedra con un diámetro de 1.80 metros, ubicado en los puntos referenciales dejados por la Misión Geodésica Francesa</Desc>
+	<Location>Se encuentra ubicada a 74 Km. desde la ciudad de Quito, en la Parroquia Cangahua dentro de la Comunidad San Luis de Guachalá</Location>
+	<How>Viniendo desde Quito, entrando por el sur de Cayambe y luego de pasar la comunidad de Otón, usted recorrerá hasta el Peaje de Panavial y a 200 metros aproximadamente podrá divisar la entrada al lugar</How>
+	<Services>Alimentación.|Hospedaje.|Balnearios.|Criadero de Venados.|Mercado de productos</Services>
+        <Contacts>Lic. Oswaldo Imbago -  Presidente Asociación turística Latitud 0°.|Celular: 0998279311.|Convencional: 2110-684</Contacts>
+	<Image>bola_de_guachala</Image>
+	<Sector>3</Sector>
+   </Site>
+   <Site >
+        <Name>Quitoloma, Pambamarca</Name>
+        <Desc>El pucará de Quitoloma (parroquia de Cangahua) es quizás el complejo más grande de la Sierra norte, pertenece a un gran complejo de varias fortalezas, llamado Pambamarca. Las primeras noticias de este complejo provienen de la misión geodésica francesa, que entre 1735 y 1744, estableció en el Pambamarca uno de los puntos topográficos para la medición del arco de meridiano (de ahí, la denominación de Francés Urcu que tuvo este cerro por un tiempo)</Desc>
+		<Location></Location>
+		<How>Existen dos vías de acceso hacia el complejo:|El primero es desde la parroquia del Quinche, a 54 minutos desde la Parroquia esta el complejo, en la comunidad de Chumillos Alto.|La segunda es desde la parroquia de Cangahua, a 45 minutos se encuentra en complejo Arqueológico.Las dos vías son de segundo orden</How>
+	<Services>Alimentación.|Hospedaje.|Balnearios.|Criadero de Venados.|Mercado de productos</Services>
+        <Contacts>Avelina Pinango – Presidenta Comunidad Chumillos Central.|Celular: 0959295819</Contacts>
+	<Image>quito_loma</Image>
+	<Sector>3</Sector>
+   </Site>
+  <Site>
+        <Name>Iglesia Matriz de Cayambe</Name>
+        <Desc>El templo ubicado frente a la Plaza Mayor está integrado por una mezcla de estilos que la convierten en arquitectura ecléctica.  Su  construcción se  inició  a  partir de 1887,  y en 1909 siendo presidente del Consejo el señor Francisco Zapata se llegó a la terminación de la Iglesia Matriz de Cayambe. |Su llamativo principal son las  obras  pictóricas  y  escultóricas  como  la  Virgen de Intag,  la  Dolorosa,  La  Virgen de Guadalupe, San Francisco, La Inmaculada,  El Corazón de Jesús,  entre otras, un ejemplo vivo de arquitectura ecléctica, conserva sus formas y estilos</Desc>
+		<Location>La iglesia está localizada entre las Calle Sucre entre Rocafuerte y Terán.</Location>
+		<How>Desde la ciudad de Quito, tomar la vía hacia la ciudad de Cayambe, se encuentra en el centro mismo de la urbe. El bus sale desde la terminal norte (Carcelén) y cuesta alrededor de un dólar. El viaje tarda aproximadamente una hora y media</How>
+	<Services>La Ciudad de Cayambe consta con los siguientes servicios:|Alojamiento|Alimentación.|Cafeterías y Hornos de Bizcochos.|Centros de Diversión.|Balnearios.|Hospedaje.|Alimentación.|Guianza hacia los pucaras.|Mountain bike</Services>
+        <Contacts>DIRECCIÓN DE DESARROLLO ECONÓMICO.|Teléfono: 022 360 052 / 022 361 832 ext. 126.</Contacts>
+	<Image>iglesia_matriz</Image>
+   <Sector>2</Sector>
+   </Site>
+    <Site>
+        <Name>Puntiachil</Name>
+        <Desc>Es uno de los Centros Ceremoniales pre- incas, de los pocos conocidos, uno de los más importantes por su relación con el poblado actual y el contexto general de los otros monumentos presentes en las cercanías. Puntiachil es un espacio arqueológico conocido desde las descripciones y dibujos de Antonio de Ulloa, en el siglo XVIII.</Desc>
+		<Location>Puntiachil se localiza Está en el Noreste de la ciudad de Cayambe.</Location>
+		<How>Para llegar se puede tomar la cooperativa de buses Cooperativa Flor del Valle, o alquilar camionetas. Cuenta con una distancia de 5 minutos caminando desde el Parque Central 23 de Julio.</How>
+	<Services>Guianza en el espacio arqueológico.|Mirador</Services>
+        <Contacts>DIRECCIÓN DE DESARROLLO ECONÓMICO.|Teléfono: 022 360 052 / 022 361 832 ext. 126.</Contacts>
+	<Image>puntachil</Image>
+	<Sector>2</Sector>
+   </Site>
+   <Site>
+        <Name>Nevado Cayambe</Name>
+        <Desc>El volcán Cayambe, con 5790 m.s.n.m. cuenta con una gran belleza que atrae a personas expertas en montañismo que desean coronarlo o niños y personas que solo desean conocer la nieve y pasar un rato agradable. Es el tercer volcán más alto de Ecuador detrás del Cotopaxi y la cumbre más alta en los Andes al norte de la línea ecuatorial. Cuenta con tres cumbres cubiertas por glaciales</Desc>
+		<Location> Se encuentra en la cordillera oriental en el parque nacional Cayambe Coca</Location>
+		<How>Para llegar se debe hacer en Camionetas las que tengan doble tracción, o Vehículos con doble tracción 4 x 4. Desde Cayambe tiene una distancia de 28 Km.|Quienes deseen realizar el ascenso completo pueden demorar entre seis y ocho horas en llegar a la cúspide del volcán, pero tienen la opción de hospedarse en el Refugio Ruales Oleas Bergé, situada a 4.700 metros sobre el nivel del mar. Allí los aventureros encontrarán una cama, una cocina, agua, electricidad, baños y una radio de emergencia. Pasar ahí la noche tiene un costo de 17 dólares.</How>
+	<Services>Alojamiento.|Alimentación.|Guianza.|Deportes de aventura (Montañismo).</Services>
+        <Contacts>Ministerio del Ambiente.|Parque Nacional Cayambe – Coca.|Teléfono: 022 110370.</Contacts>
+	<Image>nevado</Image>
+   <Sector>4</Sector>
+   </Site>
+      <Site>
+        <Name>Parque Nacional Cayambe-Coca.</Name>
+        <Desc>El Parque Nacional Cayambe-Coca es el área protegida con mayor diversidad vegetal y animal en el Ecuador; está compuesta por regiones naturales del Ecuador: la región de la Sierra, con sus páramos, lagunas y bosques andinos y la región Amazónica formada por las estribaciones orientales de la cordillera.</Desc>
+		<Location>Está ubicada al nororiente del país, ocupando cuatro provincias: Imbabura y Pichincha en la Sierra (25%), Sucumbíos y Napo en la Amazonía (75%).</Location>
+		<How>Para llegar al Parque Nacional Cayambe-Coca debe primero ir a Cayambe, a 75 Km. del norte-oriente de Quito, luego seguir por la carretera Olmedo. La guardianía del Parque se ubica en los estribos del mismo, aproximadamente a 32 Km. desde Cayambe.|Para llegar al refugio principal del volcán Cayambe se debe tomar el desvío en el control de aduana de la vía Guayllabamba-Cayambe, hacía el poblado de Juan Montalvo.|También existe otro acceso por la vía Quito-Baeza-Lago Agrio.</How>
+	<Services>Alojamiento.|Alimentación.|Guianza.|Deportes de aventura (Montañismo)</Services>
+        <Contacts>Ministerio del Ambiente.|Parque Nacional Cayambe – Coca.|Teléfono: 022 110370.</Contacts>
+	<Image>parque_nacional</Image>
+   <Sector>4</Sector>
+   </Site>
+
+</Sites>

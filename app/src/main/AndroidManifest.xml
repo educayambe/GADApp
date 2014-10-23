@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="danna.net.gadapp" >
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- Splash screen -->
+        <activity
+            android:name=".Splash"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".Splasha"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".Principal"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+ >
+            <intent-filter>
+                <action android:name="danna.net.Principal" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Biography"
+            android:label="@string/title_activity_biography"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".EagleEyes"
+            android:label="@string/title_activity_eagle_eyes"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".Tourism"
+            android:label="@string/title_activity_tourism"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".Download"
+            android:label="@string/title_activity_download"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".Dictionary"
+            android:label="@string/title_activity_dictionary"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".Detail"
+            android:label="@string/title_activity_detail"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".News"
+            android:label="@string/title_activity_news"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".Register"
+            android:label="@string/title_activity_register"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".Forgot"
+            android:label="@string/title_activity_forgot"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".Results"
+            android:label="@string/title_activity_results" >
+        </activity>
+        <activity
+            android:name=".About"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:label="@string/title_activity_about" >
+        </activity>
+    </application>
+
+</manifest>

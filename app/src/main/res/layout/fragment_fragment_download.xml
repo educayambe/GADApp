@@ -1,0 +1,33 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="200dp"
+    android:background="@drawable/aplicativo_textura"
+    tools:context="danna.net.gadapp.FragmentDownload">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageButton
+        android:layout_width="183dp"
+        android:layout_height="69dp"
+        android:id="@+id/btnApp"
+        android:layout_gravity="left|top"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/aplicacion"
+        android:clickable="true"
+        android:scaleType="fitEnd"
+        android:onClick="onClick"/>
+
+    <ImageButton
+        android:layout_width="180dp"
+        android:layout_height="68dp"
+        android:id="@+id/btnbook"
+        android:layout_gravity="left|top"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="120dp"
+        android:onClick="onClick"
+        android:src="@drawable/libros_digitales"
+        android:scaleType="fitEnd"/>
+
+
+</FrameLayout>

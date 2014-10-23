@@ -1,0 +1,65 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="230dp"
+    android:background="@drawable/aplicativo_textura"
+    tools:context="danna.net.gadapp.TourismList">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <ImageButton
+        android:layout_width="209dp"
+        android:layout_height="78dp"
+        android:id="@+id/btnNorte"
+        android:layout_gravity="left|top"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/circuito_norte"
+        android:scaleType="fitCenter"
+        android:onClick="onClick"/>
+
+    <ImageButton
+        android:layout_width="209dp"
+        android:layout_height="78dp"
+        android:id="@+id/btnCentro"
+        android:layout_gravity="left|top"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/circuito_centro"
+        android:scaleType="fitCenter"
+        android:onClick="onClick"/>
+
+    <ImageButton
+        android:layout_width="209dp"
+        android:layout_height="78dp"
+        android:id="@+id/btnSur"
+        android:layout_gravity="left|top"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="155dp"
+        android:src="@drawable/circuito_sur"
+        android:scaleType="fitCenter"
+        android:onClick="onClick"/>
+
+    <ImageButton
+        android:layout_width="209dp"
+        android:layout_height="78dp"
+        android:id="@+id/btnNevado"
+        android:layout_gravity="left|top"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="230dp"
+        android:src="@drawable/circuito_nevado"
+        android:scaleType="fitCenter"
+        android:onClick="onClick"/>
+
+    <ImageButton
+        android:layout_width="209dp"
+        android:layout_height="78dp"
+        android:id="@+id/btnmapa"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="305dp"
+        android:layout_gravity="left|top"
+        android:src="@drawable/mapa_turistico"
+        android:scaleType="fitCenter"
+        android:onClick="onClick"/>
+</FrameLayout>

@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:configChanges="orientation"
+    android:screenOrientation="landscape"
+    android:background="@drawable/aplicativo_texturaa"
+    tools:context="danna.net.gadapp.Download">
+
+
+
+    <FrameLayout
+        android:layout_width="980dp"
+        android:layout_marginLeft="5dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:id="@+id/frdwdetails"
+        android:layout_toRightOf="@+id/TourismList"
+        android:layout_toEndOf="@+id/TourismList"></FrameLayout>
+</RelativeLayout>

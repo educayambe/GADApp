@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Group>
+	<Subgroup>
+		<Title>Saludos</Title>
+	<Item>
+		<Spanish>Buenos Dias</Spanish>
+		<English>Good Morning</English>
+		<Kichwa>Allí tutamanta</Kichwa>	
+	</Item>
+	<Item>
+		<Spanish>Buenos Tardes</Spanish>
+		<English>Good Afternoon</English>
+		<Kichwa>Allí chishi</Kichwa>	
+	</Item>
+	<Item>
+		<Spanish>Buenos Noches</Spanish>
+		<English>Good Evening</English>
+		<Kichwa>Allí tuta</Kichwa>	
+	</Item>
+	</Subgroup>
+	<Subgroup>
+		<Title>Numeros</Title>
+	<Item>
+		<Spanish>Uno</Spanish>
+		<English>One</English>
+		<Kichwa>Shuk</Kichwa>	
+	</Item>
+	<Item>
+		<Spanish>Dos</Spanish>
+		<English>Two</English>
+		<Kichwa>Iskay</Kichwa>	
+	</Item>
+	<Item>
+		<Spanish>Tres</Spanish>
+		<English>Three</English>
+		<Kichwa>Kimsa</Kichwa>	
+	</Item>
+		<Item>
+		<Spanish>Cuatro</Spanish>
+		<English>Four</English>
+		<Kichwa>Chuska</Kichwa>	
+	</Item>
+	<Item>
+		<Spanish>Cinco</Spanish>
+		<English>Five</English>
+		<Kichwa>Pishka</Kichwa>	
+	</Item>
+	<Item>
+		<Spanish>Seis</Spanish>
+		<English>Six</English>
+		<Kichwa>Sukta</Kichwa>	
+	</Item>
+	<Item>
+		<Spanish>Siete</Spanish>
+		<English>Seven</English>
+		<Kichwa>kanchis</Kichwa>	
+	</Item>
+	<Item>
+		<Spanish>Ocho</Spanish>
+		<English>Eight</English>
+		<Kichwa>Iskum</Kichwa>	
+	</Item>
+	<Item>
+		<Spanish>Nueve</Spanish>
+		<English>Nine</English>
+		<Kichwa>Pusak</Kichwa>	
+	</Item>
+	<Item>
+		<Spanish>Diez</Spanish>
+		<English>Ten</English>
+		<Kichwa>Chunka</Kichwa>	
+	</Item>
+
+	</Subgroup>
+
+</Group>

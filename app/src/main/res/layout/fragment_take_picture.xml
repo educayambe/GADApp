@@ -1,0 +1,28 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="danna.net.gadapp.TakePicture"
+    android:background="@drawable/aplicativo_texturaa">
+
+    <!-- TODO: Update blank fragment layout -->
+    <FrameLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_weight="1"
+        >
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/button_capture"
+        android:text="Tomar Foto"
+        android:layout_width="130dp"
+        android:layout_marginTop="390dp"
+        android:layout_marginLeft="440dp"
+        android:layout_height="wrap_content"
+
+        />
+
+</FrameLayout>

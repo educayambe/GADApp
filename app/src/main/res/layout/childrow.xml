@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- CHILD -->
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="1" android:paddingTop="0dip" android:layout_gravity="top"
+
+    > <!--   android:background="@drawable/bar_bg" -->
+
+    <TableRow>
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_marginLeft="30dip"/>
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1" android:paddingTop="0dip" android:layout_gravity="top"
+            >
+            <TableRow>
+                <TextView
+                    android:id="@+id/lblAppName"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1" android:layout_gravity="left|center_vertical"
+                    android:textSize="12dip" android:layout_marginLeft="30dip"
+
+
+                    />
+            </TableRow>
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/btndownload"
+                android:layout_column="1"
+                android:src="@drawable/descargar" />
+
+            <TableRow >
+
+            </TableRow>
+        </TableLayout>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    </TableRow>
+
+</TableLayout>

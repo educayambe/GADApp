@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="danna.net.gadapp.EagleEyes" >
+    <item android:id="@+id/updateC"
+        android:title="@string/update_content"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+    <item android:id="@+id/about"
+        android:title="@string/About"
+        android:orderInCategory="200"
+        android:showAsAction="never" />
+
+    <item android:id="@+id/Salir"
+        android:title="@string/logout"
+        android:orderInCategory="400"
+        android:showAsAction="never" />
+</menu>

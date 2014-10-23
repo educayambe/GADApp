@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Apps>
+	<Group>
+		<Name>Simuladores</Name>
+		<SubGroup>
+			<Item>Simulador SNNA</Item>
+			<Url>www.superiorjv.edu.ec/Simulador/IntroExamen.xhtml</Url>
+		</SubGroup>
+	</Group>
+</Apps>

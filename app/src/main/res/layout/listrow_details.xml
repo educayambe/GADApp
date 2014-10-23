@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="890dp"
+    android:layout_height="460dp"
+    android:background="@drawable/aplicativo_textura"
+    android:layout_marginLeft="0dp"
+    android:padding="0dp" >
+
+    <!-- Thumbnail Image -->
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:id="@+id/imgsite"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="15dp"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descripcion:"
+        android:id="@+id/txtDesc"
+        android:layout_marginTop="40dp"
+        android:textSize="@dimen/Desc"
+        android:layout_marginLeft="230dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ubicacion:"
+        android:id="@+id/textView10"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="130dp"
+        android:textSize="@dimen/Desc"
+        android:textStyle="bold"
+
+         />
+
+    <EditText
+        android:layout_width="450dp"
+        android:layout_height="70dp"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/lbldesc"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="260dp"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+
+        android:textSize="@dimen/Ubic"
+        android:textAlignment="textStart" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/lblLocation"
+        android:layout_marginTop="150dp"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_alignRight="@+id/lbldesc"
+        android:layout_alignEnd="@+id/lbldesc"
+        android:textSize="@dimen/Ubic"
+        android:textAlignment="textStart"
+        android:layout_alignLeft="@+id/lbldesc"
+        android:layout_alignStart="@+id/lbldesc" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Titulo"
+        android:id="@+id/lblTitle"
+        android:textSize="@dimen/title"
+        android:textStyle="bold"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"  />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Como llegar:"
+        android:id="@+id/textView9"
+        android:textSize="@dimen/Desc"
+        android:textStyle="bold"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="200dp"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+         />
+
+    <EditText
+        android:layout_width="450dp"
+        android:layout_height="155dp"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/lblHow"
+        android:layout_marginLeft="260dp"
+        android:layout_marginTop="215dp"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:textSize="@dimen/Ubic"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Servicios:"
+        android:id="@+id/textView12"
+        android:layout_below="@+id/lblHow"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:textSize="@dimen/Desc"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-120dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="235dp"
+        android:layout_height="200dp"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/lblServices"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="260dp"
+        android:textSize="@dimen/Ubic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contactos:"
+        android:id="@+id/textView13"
+        android:layout_marginLeft="350dp"
+        android:layout_marginTop="370dp"
+        android:textSize="@dimen/Desc"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/lblContacts"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_below="@+id/textView13"
+        android:layout_toRightOf="@+id/textView13"
+        android:layout_toEndOf="@+id/textView13"
+        android:textSize="@dimen/Ubic" />
+
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Apps>
+	<Group>
+		<Name>ENLACES DE CALCULADORAS CIENTÍFICAS</Name>
+		<SubGroup>
+			<Item>RealCalcScientificCalculator</Item>
+			<Url>https://play.google.com/store/apps/details?id=uk.co.nickfines.RealCalc</Url>
+		</SubGroup>
+		<SubGroup>
+			<Item>handyCalcCalculator</Item>
+			<Url>https://play.google.com/store/apps/details?id=org.mmin.handycalc</Url>
+		</SubGroup>
+		<SubGroup>
+			<Item>MobiCalculator FREE</Item>
+			<Url>https://play.google.com/store/apps/details?id=my.android.calc</Url>
+		</SubGroup>
+		<SubGroup>
+			<Item>Droid48 FREE</Item>
+			<Url>https://play.google.com/store/apps/details?id=org.ab.x48</Url>
+		</SubGroup>
+	</Group>
+	<Group>
+		<Name>DICCIONARIO ESPAÑOL INGLÉS</Name>
+		<SubGroup>
+			<Item>Diccionario español ingles</Item>
+			<Url>https://play.google.com/store/apps/details?id=com.htcheng.esdict&amp;utm_source=argim.net&amp;utm_medium=desktop&amp;utm_campaign=argim</Url>
+		</SubGroup>
+		<SubGroup>
+		<Item>Aprende inglés con Wlingua</Item>
+		<Url>https://play.google.com/store/apps/details?id=com.wlingua.curso&amp;hl=es</Url>
+		</SubGroup>
+		<SubGroup>
+			<Item>Diccionario Inglés – Offline</Item>
+			<Url>https://play.google.com/store/apps/details?id=livio.pack.lang.en_US&amp;hl=es</Url>
+		</SubGroup>
+		<SubGroup>
+			<Item>Diccionario Español Inglés</Item>
+			<Url>https://play.google.com/store/apps/details?id=com.bravolang.dictionary.spanish&amp;hl=es</Url>
+		</SubGroup>
+	</Group>
+	<Group>
+		<Name>DICCIONARIO DE LA REAL ACADEMIA ESPAÑOLA</Name>
+		<SubGroup>
+			<Item>Diccionario Universal Dict Color</Item>
+			<Url>https://play.google.com/store/apps/details?id=com.socialnmobile.colordict</Url>
+		</SubGroup>
+		<SubGroup>
+			<Item>diccionario de la Real Academia Española (RAE)</Item>
+			<Url>https://play.google.com/store/apps/details?id=com.jburn.test&amp;hl=es</Url>
+		</SubGroup>
+		<SubGroup>
+			<Item>Diccionario de la RAE</Item>
+			<Url>https://play.google.com/store/apps/details?id=es.grupoplaneta.diccionario.RAE&amp;hl=es</Url>
+		</SubGroup>
+	</Group>
+	
+	
+</Apps>

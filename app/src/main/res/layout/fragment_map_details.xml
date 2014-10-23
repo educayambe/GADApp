@@ -1,0 +1,21 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="800dp"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="240dp"
+    tools:context="danna.net.gadapp.MapDetails"
+    android:background="@drawable/aplicativo_textura"
+    android:clickable="false">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <ImageView
+        android:layout_width="800dp"
+
+        android:layout_height="match_parent"
+        android:id="@+id/imgMaps"
+        android:src="@drawable/mapa_cayambe"
+        android:scaleType="fitXY"
+        android:layout_gravity="left|bottom" />
+</FrameLayout>
