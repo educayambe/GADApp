@@ -83,7 +83,7 @@ public class XMLParseApps {
                         Url = readUrl(parser);
                     }
                 }
-                child.setName(Name);
+                child.setName(NameC);
                 child.setUrl(Url);
                 nuevo.setChilds(child);
 

@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="980dp"
     android:layout_height="match_parent"
-    android:background="@drawable/aplicativo_textura"
+    android:background="@drawable/aplicativo_fragment_right"
     tools:context="danna.net.gadapp.FragmentDetail"
     android:clickable="false">
 

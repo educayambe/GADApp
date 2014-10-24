@@ -16,7 +16,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.hardware.Camera;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.FrameLayout;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import java.io.File;
@@ -40,7 +42,7 @@ import java.util.List;
  */
 public class TakePicture extends Fragment  {
     private View view;
-
+    private String PathFile="";
     private Camera mCamera;
     private CameraPreview mCameraPreview;
     public static final int MEDIA_TYPE_IMAGE = 1;
@@ -110,7 +112,9 @@ public class TakePicture extends Fragment  {
     @Override
     public void onStart(){
         super.onStart();
-        Button captureButton = (Button) view.findViewById(R.id.button_capture);
+        ImageButton captureButton = (ImageButton) view.findViewById(R.id.btncam);
+        ImageButton Enviar = (ImageButton) view.findViewById(R.id.send);
+       final EditText denuncia = (EditText)view.findViewById(R.id.txtDenuncia);
         captureButton.setOnClickListener(
                 new View.OnClickListener() {
 
@@ -120,6 +124,20 @@ public class TakePicture extends Fragment  {
 
                     }
                 });
+
+        Enviar.setOnClickListener(
+                new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        GMailSender email = new GMailSender("educayambe1@gmail.com", "educayambe2021");
+                        Sender_Email enviar = new Sender_Email("educayambe@municipiocayambe.gob.ec",denuncia.getText().toString(),view.getContext());
+                        enviar.doInBackground(email);
+
+                    }
+                });
+
+
     }
 
     /** Create a file Uri for saving an image or video */
@@ -183,7 +201,7 @@ public class TakePicture extends Fragment  {
                 FileOutputStream fos = new FileOutputStream(pictureFile);
                 fos.write(data);
                 fos.close();
-               mParam2= pictureFile.getPath();
+               PathFile= pictureFile.getPath();
             } catch (FileNotFoundException e) {
 
             } catch (IOException e) {
@@ -194,6 +212,9 @@ public class TakePicture extends Fragment  {
         }
 
     };
+    public String getPathFile(){
+        return PathFile;
+    }
     /** Create a File for saving the image */
     private static File getOutputMediaFile(){
 
@@ -252,7 +273,7 @@ public class TakePicture extends Fragment  {
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name
         public void onFragmentInteraction(Uri uri);
-        public String getPicture();
+
     }
     /** Check if this device has a camera */
     private boolean checkCameraHardware(Context context) {

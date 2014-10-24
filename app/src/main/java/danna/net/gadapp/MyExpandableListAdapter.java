@@ -1,5 +1,4 @@
 package danna.net.gadapp;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
@@ -9,26 +8,28 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MyExpandableListAdapter extends BaseExpandableListAdapter {
 
     private Context _context;
-
-    private ArrayList<AppsClass> _listDataHeader; // header titles
+    private List<String> _listDataHeader; // header titles
     // child data in format of header title, child title
+    private HashMap<String, List<AppsClassChild>> _listDataChild;
 
-
-    public MyExpandableListAdapter(Context context, ArrayList<AppsClass> listDataHeader
-                                   ) {
+    public MyExpandableListAdapter(Context context, List<String> listDataHeader,
+                                 HashMap<String, List<AppsClassChild>> listChildData) {
         this._context = context;
         this._listDataHeader = listDataHeader;
-
+        this._listDataChild = listChildData;
     }
 
     @Override
-    public AppsClassChild getChild(int groupPosition, int childPosititon) {
-        return this._listDataHeader.get(groupPosition).getChild(childPosititon);
+    public Object getChild(int groupPosition, int childPosititon) {
+        return this._listDataChild.get(this._listDataHeader.get(groupPosition))
+                .get(childPosititon);
     }
 
     @Override
@@ -40,9 +41,7 @@ public class MyExpandableListAdapter extends BaseExpandableListAdapter {
     public View getChildView(int groupPosition, final int childPosition,
                              boolean isLastChild, View convertView, ViewGroup parent) {
 
-        AppsClassChild child= new AppsClassChild();
-        child = _listDataHeader.get(groupPosition).getChild(childPosition);
-
+        final AppsClassChild childText = (AppsClassChild) getChild(groupPosition, childPosition);
 
         if (convertView == null) {
             LayoutInflater infalInflater = (LayoutInflater) this._context
@@ -52,15 +51,23 @@ public class MyExpandableListAdapter extends BaseExpandableListAdapter {
 
         TextView txtListChild = (TextView) convertView
                 .findViewById(R.id.lblListItem);
+        ImageButton button = (ImageButton) convertView
+                .findViewById(R.id.btndownload);
+        ImageView imagen =(ImageView)convertView
+                .findViewById(R.id.imgicon);
 
-        txtListChild.setText(child.getName());
+        txtListChild.setText(childText.getName());
+        txtListChild.setClickable(false);
+        button.setClickable(false);
+        imagen.setClickable(false);
+        convertView.setClickable(false);
         return convertView;
     }
 
     @Override
     public int getChildrenCount(int groupPosition) {
-        return this._listDataHeader.get(groupPosition).getSizeChild();
-
+        return this._listDataChild.get(this._listDataHeader.get(groupPosition))
+                .size();
     }
 
     @Override
@@ -81,8 +88,7 @@ public class MyExpandableListAdapter extends BaseExpandableListAdapter {
     @Override
     public View getGroupView(int groupPosition, boolean isExpanded,
                              View convertView, ViewGroup parent) {
-         AppsClass apps = new AppsClass();
-        apps = (AppsClass) getGroup(groupPosition);
+        String headerTitle = (String) getGroup(groupPosition);
         if (convertView == null) {
             LayoutInflater infalInflater = (LayoutInflater) this._context
                     .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -92,8 +98,8 @@ public class MyExpandableListAdapter extends BaseExpandableListAdapter {
         TextView lblListHeader = (TextView) convertView
                 .findViewById(R.id.lblListHeader);
         lblListHeader.setTypeface(null, Typeface.BOLD);
-        lblListHeader.setText(apps.getNameApp());
-
+        lblListHeader.setText(headerTitle);
+        convertView.setClickable(false);
         return convertView;
     }
 

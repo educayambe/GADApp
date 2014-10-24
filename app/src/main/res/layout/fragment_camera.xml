@@ -3,7 +3,7 @@
     android:layout_width="980dp"
     android:layout_marginLeft="0dp"
     android:layout_height="wrap_content"
-    android:background="@drawable/aplicativo_textura"
+    android:background="@drawable/aplicativo_fragment_right"
     tools:context="danna.net.gadapp.cameraFragment"
     android:id="@+id/cameraFragment">
 
@@ -47,6 +47,7 @@
         android:editable="true"
         android:layout_marginLeft="200dp"
         android:layout_marginTop="100dp" />
+
 
     <ImageView
         android:layout_width="720dp"

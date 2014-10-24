@@ -32,8 +32,8 @@ public class AppsClass {
     public int getSizeChild(){
         return childs.size();
     }
-    public AppsClassChild getChild(int position){
-        return childs.get(position);
+    public ArrayList<AppsClassChild> getChild(){
+        return childs;
     }
     public String getNameApp(){
         return NameApp;

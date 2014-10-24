@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
     android:layout_width="200dp"
-    android:background="@drawable/aplicativo_textura"
+    android:background="@drawable/aplicativo_fragment_left"
     tools:context="danna.net.gadapp.FragmentDownload">
 
     <!-- TODO: Update blank fragment layout -->
@@ -12,7 +12,7 @@
         android:id="@+id/btnApp"
         android:layout_gravity="left|top"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:src="@drawable/aplicacion"
         android:clickable="true"
         android:scaleType="fitEnd"
@@ -24,7 +24,7 @@
         android:id="@+id/btnbook"
         android:layout_gravity="left|top"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="95dp"
         android:onClick="onClick"
         android:src="@drawable/libros_digitales"
         android:scaleType="fitEnd"/>

@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:configChanges="orientation"
     android:screenOrientation="landscape"
-    android:background="@drawable/aplicativo_texturaa"
+    android:background="@drawable/aplicativo_textura"
     tools:context="danna.net.gadapp.Download">
 
 

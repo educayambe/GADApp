@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
     android:layout_width="230dp"
-    android:background="@drawable/aplicativo_textura"
+    android:background="@drawable/aplicativo_fragment_left"
     tools:context="danna.net.gadapp.TourismList">
 
     <!-- TODO: Update blank fragment layout -->
@@ -62,4 +62,15 @@
         android:src="@drawable/mapa_turistico"
         android:scaleType="fitCenter"
         android:onClick="onClick"/>
+
+    <ImageButton
+        android:layout_width="209dp"
+        android:layout_height="78dp"
+        android:id="@+id/btnMapaCircuito"
+        android:layout_gravity="left|top"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="385dp"
+        android:src="@drawable/mapa_circuitos"
+        android:scaleType="fitCenter"
+        android:onClick="onClick" />
 </FrameLayout>

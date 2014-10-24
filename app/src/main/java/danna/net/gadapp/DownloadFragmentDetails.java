@@ -2,17 +2,23 @@ package danna.net.gadapp;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ExpandableListView;
+import android.widget.Toast;
+import android.widget.ExpandableListView.OnChildClickListener;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
 
 /**
@@ -24,11 +30,18 @@ import java.util.ArrayList;
  * create an instance of this fragment.
  *
  */
-public class DownloadFragmentDetails extends Fragment {
+public class DownloadFragmentDetails extends Fragment implements ExpandableListView.OnGroupClickListener, ExpandableListView.OnChildClickListener  {
 
+    private List<String> listDataHeader;
+    private HashMap<String, List<AppsClassChild>> listDataChild;
+    private XMLParseApps ParseApps;
+    String filename="Apps.xml";
+    String filename2="Books.xml";
+    MyExpandableListAdapter listAdapter;
+    InputStream filen=null;
 
     private Context context=null;
-    private ExpandableListView Apps;
+    private ExpandableListView ListApps;
 
     private ArrayList<AppsClass> App = new ArrayList<AppsClass>();
     View view=null;
@@ -80,6 +93,9 @@ public class DownloadFragmentDetails extends Fragment {
         // Inflate the layout for this fragment
         mParam1= getArguments().getString("Type");
         view = inflater.inflate(R.layout.fragment_fragment_download_details, container, false);
+
+        ListApps = (ExpandableListView) view.findViewById(R.id.ListDescargas);
+
         return view;
     }
 
@@ -106,6 +122,19 @@ public class DownloadFragmentDetails extends Fragment {
         super.onDetach();
         mListener = null;
     }
+
+    @Override
+    public boolean onChildClick(ExpandableListView parent, View v, int groupPosition, int childPosition, long id) {
+         AppsClassChild childApp =(AppsClassChild)   parent.getSelectedItem();
+        Log.d("Selected item",childApp.getName().toString());
+        return false;
+    }
+
+    @Override
+    public boolean onGroupClick(ExpandableListView parent, View v, int groupPosition, long id) {
+        return false;
+    }
+
     /**
      * This interface must be implemented by activities that contain this
      * fragment to allow an interaction in this fragment to be communicated
@@ -119,7 +148,69 @@ public class DownloadFragmentDetails extends Fragment {
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name
         public void onFragmentInteraction(Uri uri);
-        public void LoadExpListView(View view);
+
     }
 
+
+    @Override
+    public void onStart(){
+        super.onStart();
+        if (mParam1.equals("Apps")){
+            try {
+                UtilsFiles files = new UtilsFiles(view.getContext(), filename);
+                files.CopyFile();
+                filen = view.getContext().getAssets().open("files/" + filename);
+            } catch (IOException ioe) {
+                System.out.printf("Open File Error %s", ioe.toString());
+            }
+            ParseApps = new XMLParseApps();
+            try {
+                ParseApps.parse(filen);
+            } catch (Exception e) {
+                System.out.printf("Open File Error %s", e.toString());
+            }
+            Log.d("Activity", "Boton Apps pressed'");
+
+        }else{
+            try {
+                UtilsFiles files = new UtilsFiles(view.getContext(), filename2);
+                files.CopyFile();
+                filen = view.getContext().getAssets().open("files/" + filename2);
+            } catch (IOException ioe) {
+                System.out.printf("Open File Error %s", ioe.toString());
+            }
+            ParseApps = new XMLParseApps();
+            try {
+                ParseApps.parse(filen);
+            } catch (Exception e) {
+                System.out.printf("Open File Error %s", e.toString());
+            }
+            Log.d("Activity", "Boton Book pressed'");
+        }
+        buildArrays();//build the array to the Expandeable List View
+        listAdapter =new MyExpandableListAdapter(view.getContext(), listDataHeader, listDataChild);
+        ListApps.setAdapter(listAdapter);
+        ListApps.setOnChildClickListener(this);
+
+
+    }
+
+    public void buildArrays(){
+        if (ParseApps.entries.size()>0){
+            listDataHeader = new ArrayList<String>();
+            listDataChild = new HashMap<String, List<AppsClassChild>>();
+            for (int i=0;i<ParseApps.entries.size();i++){
+                listDataHeader.add( ParseApps.entries.get(i).getNameApp());
+                listDataChild.put(ParseApps.entries.get(i).getNameApp(),ParseApps.entries.get(i).getChild());
+            }
+        }
+
+    }
+    public void openWebPage(String url) {
+        Uri webpage = Uri.parse(url);
+        Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
+        if (intent.resolveActivity(view.getContext().getPackageManager()) != null) {
+            startActivity(intent);
+        }
+    }
 }

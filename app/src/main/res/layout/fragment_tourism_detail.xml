@@ -4,7 +4,7 @@
     android:layout_height="wrap_content"
     android:layout_marginLeft="220dp"
     tools:context="danna.net.gadapp.TourismDetail"
-    android:background="@drawable/aplicativo_textura">
+    android:background="@drawable/aplicativo_fragment_right">
 
     <!-- TODO: Update blank fragment layout -->
 

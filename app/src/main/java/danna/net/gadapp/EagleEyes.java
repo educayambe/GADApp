@@ -166,15 +166,8 @@ public class EagleEyes extends Activity implements ListFragment.OnFragmentIntera
         Log.d("Message from Fragment 2","Loaded");
     }
 
-    @Override
-    public void getPicture(View view) {
-        ImageView picture = (ImageView)view.findViewById(R.id.imgCam);
-        TakePicture foto =  (TakePicture)
-                fragmentManager.findFragmentById(R.id.camera_preview);
-        Bundle args = new Bundle();
-        String path="";
-        args.getString("Path",path);
-    }
+
+
 
     @Override
 

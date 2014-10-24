@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="200dp"
     android:layout_height="match_parent"
-    android:background="@drawable/aplicativo_textura"
+    android:background="@drawable/aplicativo_fragment_left"
     tools:context="danna.net.gadapp.ListFragment">
 
     <!-- TODO: Update blank fragment layout -->

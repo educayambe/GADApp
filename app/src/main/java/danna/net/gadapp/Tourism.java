@@ -3,6 +3,8 @@ package danna.net.gadapp;
 import android.app.Activity;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.ActivityNotFoundException;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
@@ -12,6 +14,7 @@ import android.view.View;
 
 import org.xmlpull.v1.XmlPullParserException;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 
@@ -143,12 +146,55 @@ public class Tourism extends Activity  implements TourismList.OnFragmentInteract
                 fragmentTransaction.commit();
 
             }break;
+            case R.id.btnMapaCircuito : {
+                Log.d("Activity", "Boton map circuitos pressed'");
+                String filename;
+                filename="mapa_circuitos.pdf";
+                try {
+                    loadDocInReader(filename, view);
+                } catch (ActivityNotFoundException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                } catch (Exception e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                }
+
+            }break;
         }
 
     }
     @Override
     public void onPause(){
         super.onPause();
+    }
+    private void loadDocInReader(String doc,View view)
+
+    {
+        String file ="/mnt/sdcard"+ File.separator+ doc.toString();
+        UtilsFiles files= new UtilsFiles(view.getContext(),doc);
+        files.CopyFile(file);
+        File filep = new File(file);
+        if (filep.exists()) {
+            Uri filepath = Uri.fromFile(filep);
+            Intent intent = new Intent(Intent.ACTION_VIEW);
+            intent.setDataAndType(filepath, "application/pdf");
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+
+            try {
+                startActivity(intent);
+            } catch (Exception e) {
+
+                Log.e("error", "PDF File not open" + e);
+            }
+
+
+        } else {
+            Log.e("error", "PDF File not open" );
+
+        }
+
+
     }
 
 }

@@ -37,7 +37,7 @@ public class UtilsFiles {
 
         if (!new File(DestinationFile).exists()) {
             try {
-                CopyFromAssetsToStorage(context, "files/"+filename.toString(), DestinationFile);
+                CopyFromAssetsToStorage(context, File.separator+"files"+File.separator+filename.toString(), DestinationFile);
             } catch (IOException e) {
                 // TODO Auto-generated catch block
                 e.printStackTrace();

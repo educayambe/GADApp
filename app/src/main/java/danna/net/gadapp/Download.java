@@ -16,6 +16,8 @@ import android.widget.ListView;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -24,12 +26,12 @@ import android.view.Menu;
 import android.widget.ExpandableListView;
 
 
-public class Download extends Activity  implements DownloadFragmentDetails.OnFragmentInteractionListener,DownloadFragmentList.OnFragmentInteractionListener {
+public class Download extends Activity  implements DownloadFragmentDetails.OnFragmentInteractionListener
+        ,DownloadFragmentList.OnFragmentInteractionListener
+{
     private FragmentManager fragmentManager=null;
     private FragmentTransaction fragmentTransaction=null;
-    private XMLParseApps ParseApps;
-    String filename="Apps.xml";
-    String filename2="Books.xml";
+
 
     Bundle bundle =null;
     DownloadFragmentList downloadFragmentList =null;
@@ -75,14 +77,19 @@ public class Download extends Activity  implements DownloadFragmentDetails.OnFra
         }
         return super.onOptionsItemSelected(item);
     }
+
+
+    @Override
+    public void onFragmentInteraction(Uri uri) {
+
+    }
     public void onClick(View view){
-        switch(view.getId()){
-            case R.id.btnApp : {
+        switch(view.getId()) {
+            case R.id.btnApp:{
                 Log.d("Activity", "Boton App pressed'");
                 fragmentManager = getFragmentManager();
                 fragmentTransaction =  fragmentManager.beginTransaction();
                 fragmentTransaction.replace(android.R.id.content, downloadFragmentList);
-
                 bundle.putString("Type", "Apps");
                 DownloadFragmentDetails Appsfragment = new DownloadFragmentDetails();
                 Appsfragment.setArguments(bundle);
@@ -90,8 +97,10 @@ public class Download extends Activity  implements DownloadFragmentDetails.OnFra
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
 
+
             };break;
-            case R.id.btnbook : {
+            case R.id.btnbook: {
+
                 Log.d("Activity", "Boton Book pressed'");
                 fragmentManager = getFragmentManager();
                 fragmentTransaction =  fragmentManager.beginTransaction();
@@ -102,58 +111,12 @@ public class Download extends Activity  implements DownloadFragmentDetails.OnFra
                 fragmentTransaction.replace(R.id.frdwdetails,Booksfragment);
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
-
-            }break;
-
-        }
-
-    }
-
-    @Override
-    public void onFragmentInteraction(Uri uri) {
-
-    }
-    public void LoadExpListView(View view){
-        MyExpandableListAdapter listAdapter;
-        ExpandableListView expListView;
-        InputStream filen=null;
-        expListView = (ExpandableListView) findViewById(R.id.ListDescargas);
-        switch(view.getId()) {
-            case R.id.btnApp:{
-                try {
-                    UtilsFiles files = new UtilsFiles(view.getContext(), filename);
-                    files.CopyFile();
-                    filen = view.getContext().getAssets().open("files/" + filename);
-                } catch (IOException ioe) {
-                    System.out.printf("Open File Error %s", ioe.toString());
-                }
-                ParseApps = new XMLParseApps();
-                try {
-                    ParseApps.parse(filen);
-                } catch (Exception e) {
-                    System.out.printf("Open File Error %s", e.toString());
-                }
-                };break;
-            case R.id.btnbook: {
-
-                    try {
-                        UtilsFiles files = new UtilsFiles(view.getContext(), filename2);
-                        files.CopyFile();
-                        filen = view.getContext().getAssets().open("files/" + filename2);
-                    } catch (IOException ioe) {
-                        System.out.printf("Open File Error %s", ioe.toString());
-                    }
-                    ParseApps = new XMLParseApps();
-                    try {
-                        ParseApps.parse(filen);
-                    } catch (Exception e) {
-                        System.out.printf("Open File Error %s", e.toString());
-                    }
              }
 
         }
 
-        listAdapter = new MyExpandableListAdapter(this, ParseApps.entries);
-        expListView.setAdapter(listAdapter);
     }
+
+
+
 }

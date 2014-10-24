@@ -127,7 +127,7 @@ public class MyDatabase extends SQLiteAssetHelper {
 
         SQLiteDatabase db = getWritableDatabase();
 
-        String query = "Insert into cuenta(correo,contrasena,nombres,cedula,sector, institucion) values('";
+        String query = "Insert into cuenta(correo,contrasena,nombres,cedula,sector, school) values('";
         query = query +args[0]+"','" ;
         query = query +args[1]+"','" ;
         query = query +args[2]+"','" ;

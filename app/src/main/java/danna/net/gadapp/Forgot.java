@@ -68,7 +68,7 @@ public class Forgot extends Activity {
 
                //   SendMail sender = new SendMail();
                     GMailSender sender = new GMailSender("educayambe1@gmail.com","educayambe2021");
-                  new Sender_Email(message,nombre).doInBackground(sender);
+                  new Sender_Email(message,nombre,getApplicationContext()).doInBackground(sender);
 
                      valido = true;
                  }
